@@ -1,0 +1,82 @@
+
+<html>
+<head>
+  <title>how yoga made me get over woody allen</title>
+  <script src="popcorn.js"></script>
+
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style type="text/css">.showbox{float:left;margin:4em 1em;width:100px;height:60px;border:2px solid green;background-color:#fff;line-height:10px;text-align:center}</style>
+  <style type="text/css">
+
+  .showbox {
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+  .scale:hover {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    z-index: 50;
+  }
+
+</style><style type="text/css">
+  .showoff:hover {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    border-color: red;
+    z-index: 50;
+  }
+</style>
+    <script>
+      // ensure the web page (DOM) has loaded
+      document.addEventListener("DOMContentLoaded", function () {
+
+         // Create a popcorn instance by calling Popcorn("#id-of-my-video")
+         var pop = Popcorn("#woody");
+
+         // add a video at 2 seconds, and remove it at 6 seconds
+         pop.webpage({
+           start: 2,
+           end: 6,
+           src: "http://www.youtube.com/embed/g0FSYKcV2Mk",
+           target: "secondary"
+         });
+
+popcorn.googlemap({
+start:'1',
+end:'10',
+target:'webpage',
+type:'undefined',
+zoom:'undefined',
+lat:'undefined',
+lng:'undefined',
+location:'new york city',
+heading:'undefined',
+pitch:'undefined'});
+
+         
+         // play the video right away
+         pop.play();
+
+      }, false);
+    </script>
+</head>
+
+<body>
+<div>
+  <video id="woody" class="showbox showoff" controls>
+  <source src="me.webm" type='video/ogg; codecs="theora, vorbis"'>
+  </video>  
+
+                                          <input type="checkbox" id="accessibility" checked="checked" />
+  
+  
+  </div>
+  <div id="secondary" class="showbox showoff">
+</div>
+    <div id="tertiary" class="showoff">
+</div>
+<div id="webpage"></div>
+</body>
+</html>
